@@ -1,4 +1,5 @@
-
+#input: user input
+#output: user input
 def takeOrders():
     return input("What would you like today?\n")
 
@@ -16,15 +17,19 @@ def separateOrders(str):
 #output: you answer :)
 def onePlateToAnother(pancakes):
     if(len(pancakes) == 0):
-return []
+	return []
     else:
-return [pancakes[len(pancakes)-1]] + onePlateToAnother(pancakes[:len(pancakes) - 1])
+	return [pancakes[len(pancakes)-1]] + onePlateToAnother(pancakes[:len(pancakes) - 1])
+
+def orderUp(totalNum, orders): 
+    #your code here!
+    return
 
 #What is this function doing?
 def main():
     pancakeStack = [takeOrders()]
     while(input("Would you like anything else? y/n\n").lower() != “n”):
-pancakeStack.append(takeOrders())
+	pancakeStack.append(takeOrders())
     madeOrder = onePlateToAnother(pancakeStack)
     print("Your order of {} is up!".format(madeOrder))
 
