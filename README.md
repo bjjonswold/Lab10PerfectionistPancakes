@@ -32,12 +32,3 @@ Example of how this function would be used: orderUp(3, [“blueberry, strawberry
 	
 def orderUp(totalNum, orders):
 	#your code here!
-
-Sample orderUp(totalNum, orders):
-
-def orderUp(totalNum, orders):
-    if len(orders) == 0:
-        return
-    flipped = onePlateToAnother(separateOrders(orders[0]))
-    print("Order #{}, your order of {} pancakes is up!".format(totalNum - len(orders) + 1, flipped))
-    orderUp(totalNum, orders[1:])
