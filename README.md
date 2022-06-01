@@ -29,6 +29,3 @@ Example of how this function would be used: orderUp(3, [“blueberry, strawberry
 “Order #2, your order of [“plain”, “whole wheat”] pancakes is up!”
 “Order #3, your order of [“banana nut”, “birthday cake”, “chocolate chip”] pancakes is up!” )
 (Hint: there is already a function for turning strings into lists)
-	
-def orderUp(totalNum, orders):
-	#your code here!
