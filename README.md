@@ -53,7 +53,9 @@ Think of lists as cubbies or drawers. Each entry in the list contains an item, a
 If you are ever writing a function and you already have a function that does part of the work, just call that function in your function! For example, if I am writing a function called fact3(num) that finds the factorial of a number and multiplies it by 3 and I have a function called factorial(number) that gets the factorial, then I may write fact3(num) like this:
 
 def fact3(num):
+  
   facto = factorial(num)
+  
   return facto * 3
 
 # Reminder on Recursion
