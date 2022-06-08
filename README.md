@@ -52,11 +52,9 @@ Think of lists as cubbies or drawers. Each entry in the list contains an item, a
 # Reminder on Using Functions Within Functions
 If you are ever writing a function and you already have a function that does part of the work, just call that function in your function! For example, if I am writing a function called fact3(num) that finds the factorial of a number and multiplies it by 3 and I have a function called factorial(number) that gets the factorial, then I may write fact3(num) like this:
 
-def fact3(num):
-  
-    facto = factorial(num)
-  
-    return facto * 3
+    def fact3(num):
+      facto = factorial(num)
+      return facto * 3
 
 # Reminder on Recursion
 This warmup uses pancake stacks to try to emulate the order of operations for recursion. When writing anything with recursion, it can help to write out what is happening or what your pancake stack looks like. Recursion works like making a stack fo pancakes and moving it from one plate to another. You stack up the pancakes on the first plate in order, in the same way that your code will stack up calls to the recursive function, until it reaches the last pancake, or the base case. Now you're done making pancakes and you can start moving them to the other plate--in your code, this is where the code will read the code that comes after the function call. However, if you're moving pancakes, you have to start with the top pancake or they might tear. WHich means you start with the LAST function call and work all the way back to the first time the function is called. 
