@@ -24,10 +24,10 @@ double chocolate
 Now it’s your turn! Write a function that takes in the initial number of orders and a list of orders (this will be a list of strings) and then RECURSIVELY prints each order and says “Order #_, your order of _ pancakes is up!”
 
 For Example, for orderUp(3, \[“blueberry, strawberry”, “plain, whole wheat”, “banana nut, birthday cake, chocolate chip”])
-the output would be:
-“Order #1, your order of \[“blueberry”, “strawberry”\] pancakes is up!”
-“Order #2, your order of \[“plain”, “whole wheat”] pancakes is up!”
-“Order #3, your order of \[“banana nut”, “birthday cake”, “chocolate chip”] pancakes is up!”
+the output would be: \n
+“Order #1, your order of \[“blueberry”, “strawberry”\] pancakes is up!” \n
+“Order #2, your order of \[“plain”, “whole wheat”] pancakes is up!” \n
+“Order #3, your order of \[“banana nut”, “birthday cake”, “chocolate chip”] pancakes is up!” \n
 (Hint: there is already a function for turning strings into lists)
 
 # Step 3: Test orderUp(totalNum, orders)
