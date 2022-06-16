@@ -27,9 +27,9 @@ For Example, for
 ```python
 orderUp(3, [“blueberry, strawberry”, “plain, whole wheat”, “banana nut, birthday cake, chocolate chip”])
 # the output would be:
-# “Order #1, your order of \[“blueberry”, “strawberry”] pancakes is up!”
-# “Order #2, your order of \[“plain”, “whole wheat”] pancakes is up!”
-# “Order #3, your order of \[“banana nut”, “birthday cake”, “chocolate chip”] pancakes is up!”
+# “Order #1, your order of [“blueberry”, “strawberry”] pancakes is up!”
+# “Order #2, your order of [“plain”, “whole wheat”] pancakes is up!”
+# “Order #3, your order of [“banana nut”, “birthday cake”, “chocolate chip”] pancakes is up!”
 ```
 (Hint: there is already a function for turning strings into lists)
 
