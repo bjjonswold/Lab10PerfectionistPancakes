@@ -8,7 +8,7 @@ Review the code provided. Answer the following questions by adding comments to y
 You have been hired as a new employee at a perfectionist-run cafe. The owners are very particular about how they like things organized, so they have decided to implement a robot to do some of the work for them. You are in charge of coding the robot. Attached is some of the code you have already written.
 
 # Step 1
-1. What is the output for onePlateToAnother? **replace this question with code tracing later and link code tracing example**
+1. Take a look at FlowDiagram.png. This is the flow diagram for separateOrders(str). On a piece of paper, or something separate, make a flow diagram for onePlateToAnother() and show it to a TA when you're done.
 2. What is the output for onePlateToAnother(\[“blueberry”, “strawberry”, “choco chip”]?
 3. What is the base case for onePlateToAnother(pancakes)?
 4. What is the output for main() when this is the input?:
