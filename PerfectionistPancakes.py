@@ -7,7 +7,6 @@ def takeOrders():
 #output: list of types of pancakes
 #ex: input: "rice, whole wheat, chocolate" output: [“rice”, “whole wheat”, “chocolate”]
 def separateOrders(str):
-    lst = []
     if (str.find(",") == -1):
         return [str]
     return [str[: str.find(",")]] + separateOrders(str[str.find(",") + 1:])
