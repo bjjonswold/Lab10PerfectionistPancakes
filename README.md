@@ -20,7 +20,8 @@ birthday cake
 n 
 double chocolate
 
-```mermaid(flow diagram)
+```mermaid
+(flow diagram)
 graph TD
     A{separateOrders} -->|has more than one item| B(has a Comma)
     B --> C[remove left-most item before the comma and add to list]
