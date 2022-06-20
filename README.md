@@ -22,11 +22,11 @@ double chocolate
 
 ```mermaid
 (flow diagram)
-graph TD
-    A{separateOrders} -->|has more than one item| B(has a Comma)
-    B --> C[remove left-most item before the comma and add to list]
-    C --> |loop with new string| A
-    A --> |last item| D(no commas) --> E[add last item to list] --> F{return the finished list}
+graph TD;
+    A{separateOrders} -->|has more than one item| B(has a Comma);
+    B --> C[remove left-most item before the comma and add to list];
+    C --> |loop with new string| A;
+    A --> |last item| D(no commas) --> E[add last item to list] --> F{return the finished list};
 ```
 
 
