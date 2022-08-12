@@ -30,7 +30,7 @@ graph TD;
 
 
 # Step 2: Coding orderUp(totalNum, orders)
-Now it’s your turn! Write a function that takes in the initial number of orders and a list of orders (this will be a list of strings) and then RECURSIVELY adds each order to a string and says “Order #_, your order of _ pancakes is up!\n”. It returns this string at the end.
+Now it’s your turn! Write a function that takes in the initial number of orders and a list of orders (this will be a list of strings) and then RECURSIVELY prints each order and says “Order #_, your order of _ pancakes is up!".
 
 For Example, for 
 ```python
