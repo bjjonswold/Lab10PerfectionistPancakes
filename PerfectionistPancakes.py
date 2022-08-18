@@ -9,7 +9,7 @@ def takeOrders():
 def separateOrders(str):
     if (str.find(",") == -1):
         return [str]
-    return [str[: str.find(",")]] + separateOrders(str[str.find(",") + 1:])
+    return [str[: str.find(",")]] + separateOrders(str[str.find(",") + 2:])
 		
 
 #input: pancakes–a list that contains a stack of pancakes
