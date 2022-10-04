@@ -38,11 +38,11 @@ For Example, for
 ```python
 orderUp(3, [“blueberry, strawberry”, “plain, whole wheat”, “banana nut, birthday cake, chocolate chip”])
 # the output would be:
-# “Order #1, your order of [“blueberry”, “strawberry”] pancakes is up!”
-# “Order #2, your order of [“plain”, “whole wheat”] pancakes is up!”
-# “Order #3, your order of [“banana nut”, “birthday cake”, “chocolate chip”] pancakes is up!”
+# “Order #1, your order of [“strawberry”, “blueberry”] pancakes is up!”
+# “Order #2, your order of [“whole wheat”, “plain”] pancakes is up!”
+# “Order #3, your order of [“chocolate chip”, “banana nut”, “birthday cake”] pancakes is up!”
 ```
-(Hint: there is already a function for turning strings into lists)
+(Hint: there is already a function for turning strings into lists, and there is a function for reversing the pancakes)
 
 # Step 3: Test orderUp(totalNum, orders)
 How do you test code? You simply add the lines to your python file (in the future, you will have test lines in separate files).
