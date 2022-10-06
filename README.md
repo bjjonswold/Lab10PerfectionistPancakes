@@ -40,7 +40,7 @@ orderUp(3, [“blueberry, strawberry”, “plain, whole wheat”, “banana nut
 # the output would be:
 # “Order #1, your order of [“strawberry”, “blueberry”] pancakes is up!”
 # “Order #2, your order of [“whole wheat”, “plain”] pancakes is up!”
-# “Order #3, your order of [“chocolate chip”, “banana nut”, “birthday cake”] pancakes is up!”
+# “Order #3, your order of [“chocolate chip”, “birthday cake”, “banana nut”] pancakes is up!”
 ```
 (Hint: there is already a function for turning strings into lists, and there is a function for reversing the pancakes)
 
