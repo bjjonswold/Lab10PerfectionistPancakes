@@ -35,7 +35,15 @@ graph TD;
 # Step 2: Coding orderUp(totalNum, orders)
 Now it’s your turn! Write a function that takes in the initial number of orders and a list of orders (this will be a list of strings) and then RECURSIVELY adds each order to a string as: “Order #_, your order of _ pancakes is up!\n".
 
-To break this function down into human actions, you start as a waiter. You take the orders of a bunch of different customers and all of those orders are on your piece of paper: orders. Now, you want to hand these orders off to the cook one at a time and you want to make them easier to read. Right now, your orders are written with every pancake the person ordered on one line, but you want to separate them into bulletins. We can do this with the separateOrders() function. So, you'll want to make a new piece of paper (or variable) and separate the first order in your list of orders (or orders[0]). Now that you have the order nicely formatted, you can send it to the cook. The cook (and you) must flip the pancakes upside down using onePlateToAnother(). The cook will then hand the pancakes off to you, and you now must call out that the order is ready. To get the order number, we want to subtract the number of orders left (or len(orders)) from totalNum and add 1 to the result. Now we must add our recursion. You'll want to add another call to orderUp() and remove the order you just finished from the list of orders for your order parameter. Your base case should be when you have run out of orders to look at.
+To break this function down into human actions, you start as a waiter. 
+- You take the orders of a bunch of different customers and all of those orders are on your piece of paper: the orders parameter. 
+- Now, you want to hand these orders off to the cook one at a time and you want to make them easier to read. Right now, your orders are written with every pancake the person ordered on one line, but you want to separate them into bullet points. 
+- We can do this with the separateOrders() function. So, you'll want to make a new piece of paper (or variable) and separate the first order in your list of orders (or orders\[0\]). Now that you have the order nicely formatted, you can send it to the cook. 
+- The cook (and you) must flip the pancakes upside down using onePlateToAnother() with the order you just gave them. 
+- The cook will then hand the pancakes off to you, and you now must call out that the order is ready. 
+- To get the order number, we want to subtract the number of orders left (or len(orders)) from totalNum, or the original number/length of orders you started with, and add 1 to the result. 
+- Now we must add our recursion. You'll want to add another call to orderUp() and remove the order you just finished from the list of orders for your order parameter.
+- Your base case should be when you have run out of orders to serve.
 
 For Example, for 
 ```python
