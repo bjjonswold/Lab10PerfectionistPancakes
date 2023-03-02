@@ -23,21 +23,22 @@ def separateOrders(str):
 #input: pancakes–a list that contains a stack of pancakes
 #output: you answer :)
 def onePlateToAnother(pancakes):
-    if(len(pancakes) == 0):
-	    return []
+    if len(pancakes) == 0: 
+         return []
     else:
 	    return [pancakes[len(pancakes)-1]] + onePlateToAnother(pancakes[:len(pancakes) - 1])
 
 print('TESTING:', onePlateToAnother(['blueberry', 'strawberry', 'choco chip']))
-order = []
 
 def orderUp(totalNum, orders): 
     #your code here!
-    if totalNum == 0:
-        return order
-    order[totalNum - 1] = separateOrders(orders[totalNum - 1])
+    if len(orders) == 0:
+        return ''
+    else:
+        separateOrder = separateOrders(orders[0])
+        return f'Order #{totalNum - len(orders) + 1}, your order of {onePlateToAnother(separateOrder)} pancakes is up!\n' + orderUp(totalNum, orders[1:])
 
-    return
+print('Testing Orderup\n', orderUp(3, ['blueberry, strawberry', 'plain, whole wheat', 'banana nut, birthday cake, chocolate chip']))
 
 #What is this function doing?
 def main():
